@@ -1,0 +1,23 @@
+{
+  "name": "@whcg/whcg-number-field",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "module": "dist/index.es6.js",
+  "scripts": {
+    "build": "rollup -c",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "dist"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "rollup-plugin-node-resolve": "^3.3.0"
+  },
+  "dependencies": {
+    "@polymer/polymer": "^3.0.2",
+    "@vaadin/vaadin-text-field": "^2.0.1-pre.2"
+  }
+}
