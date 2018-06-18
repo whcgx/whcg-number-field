@@ -1,5 +1,6 @@
-import {html, PolymerElement} from '@polymer/polymer/polymer-element.js';
+import { html, PolymerElement } from '@polymer/polymer/polymer-element.js';
 import '@vaadin/vaadin-text-field/vaadin-text-field.js';
+
 /*
  * `WhcgNumberField`
  * 
@@ -43,6 +44,11 @@ export class WhcgNumberField extends PolymerElement {
                 readOnly: false,
             },
         }
+    }
+    connectedCallback() {
+        super.connectedCallback();
+        let event = new CustomEvent('childrenattached', {bubbles: true, composed: true});
+        this.dispatchEvent(event);
     }
 
 }
