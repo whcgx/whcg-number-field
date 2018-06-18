@@ -58,7 +58,10 @@ export class WhcgNumberField extends PolymerElement {
     connectedCallback() {
         super.connectedCallback();
         let event = new CustomEvent('childrenattached', {bubbles: true, composed: true});
+<<<<<<< HEAD
         console.log('dispatchingEvent!!');
+=======
+>>>>>>> origin/master
         this.dispatchEvent(event);
     }
 
