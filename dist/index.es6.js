@@ -45,6 +45,11 @@ class WhcgNumberField extends PolymerElement {
             },
         }
     }
+    connectedCallback() {
+        super.connectedCallback();
+        let event = new CustomEvent('childrenattached', {bubbles: true, composed: true});
+        this.dispatchEvent(event);
+    }
 
 }
 
