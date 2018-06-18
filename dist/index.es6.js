@@ -25,7 +25,7 @@ class WhcgNumberField extends PolymerElement {
 
             label: {
                 type: String,
-                notify: false,
+                notify: true,
                 readOnly: false,
             },
             value: {
@@ -35,19 +35,30 @@ class WhcgNumberField extends PolymerElement {
             },
             placeholder: {
                 type: String,
-                notify: false,
+                notify: true,
                 readOnly: false,
             },
             suffix: {
                 type: String,
-                notify: false,
+                notify: true,
                 readOnly: false,
             },
+            kind: {
+                type: String,
+                notify: true,
+                readOnly: false,
+            },
+            period: {
+                type: String,
+                notify: true,
+                readOnly: false,
+            }
         }
     }
     connectedCallback() {
         super.connectedCallback();
         let event = new CustomEvent('childrenattached', {bubbles: true, composed: true});
+        console.log('dispatchingEvent!!');
         this.dispatchEvent(event);
     }
 
