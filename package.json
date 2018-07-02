@@ -1,6 +1,10 @@
 {
   "name": "@whcg/whcg-number-field",
+<<<<<<< HEAD
   "version": "1.0.3",
+=======
+  "version": "1.0.4",
+>>>>>>> origin/master
   "description": "",
   "main": "dist/index.js",
   "module": "dist/index.es6.js",
