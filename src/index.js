@@ -32,6 +32,7 @@ export class WhcgNumberField extends PolymerElement {
                 type: String,
                 notify: true,
                 readOnly: false,
+                observer: '_valueChanged'
             },
             placeholder: {
                 type: String,
@@ -52,14 +53,27 @@ export class WhcgNumberField extends PolymerElement {
                 type: String,
                 notify: true,
                 readOnly: false,
+            },
+            valueoutput: {
+                type: String,
+                notify: true,
+                readOnly: false,
             }
         }
     }
+
+    _valueChanged() {
+        console.log('new value');
+        console.log(this.value);
+        this.valueoutput = this.value;
+    }
+
     connectedCallback() {
         super.connectedCallback();
         let event = new CustomEvent('childrenattached', {bubbles: true, composed: true});
         console.log('dispatchingEvent!!');
         this.dispatchEvent(event);
+
     }
 
 }
