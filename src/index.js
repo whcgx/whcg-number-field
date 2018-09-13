@@ -1,6 +1,6 @@
 import { html, PolymerElement } from '@polymer/polymer/polymer-element.js';
 import '@vaadin/vaadin-text-field/vaadin-text-field.js';
-import '@whcg/whcg-number-field/theme/whcg-number-field-styles.js';
+import '../theme/whcg-number-field-styles.js';
 
 export class WhcgNumberField extends PolymerElement {
     static get template() {
@@ -127,4 +127,3 @@ export class WhcgNumberField extends PolymerElement {
 }
 
 window.customElements.define('whcg-number-field', WhcgNumberField);
-

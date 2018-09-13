@@ -1,24 +1,25 @@
 {
   "name": "@whcg/whcg-number-field",
-  "version": "1.0.7",
-  "description": "",
+  "version": "1.2.0",
+  "description": "```html <whcg-number-field placeholder=\"...antal\" value=\"0.02\" suffix=\"%\" valueoutput=\"{{inflation}}\"></whcg-number-field> ```",
   "main": "dist/index.js",
   "module": "dist/index.es6.js",
   "scripts": {
-    "build": "rollup -c",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "files": [
+    "build": "rollup -c"
+ },
+ "files": [
     "dist",
     "theme"
-  ],
+ ],
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whcgx/whcg-number-field.git"
+  },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "rollup-plugin-node-resolve": "^3.3.0"
+  "bugs": {
+    "url": "https://github.com/whcgx/whcg-number-field/issues"
   },
-  "dependencies": {
-    "@polymer/polymer": "^3.0.2",
-    "@vaadin/vaadin-text-field": "^2.0.1-pre.2"
-  }
+  "homepage": "https://github.com/whcgx/whcg-number-field#readme"
 }

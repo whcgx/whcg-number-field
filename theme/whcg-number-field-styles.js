@@ -1,4 +1,3 @@
-
 const $_documentContainer = document.createElement('template');
 
 $_documentContainer.innerHTML = `<dom-module id="whcg-number-field-styles" theme-for="vaadin-text-field">
@@ -114,4 +113,3 @@ $_documentContainer.innerHTML = `<dom-module id="whcg-number-field-styles" theme
 </dom-module>`;
 
 document.head.appendChild($_documentContainer.content);
-
