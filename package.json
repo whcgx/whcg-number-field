@@ -6,12 +6,11 @@
   "module": "dist/index.es6.js",
   "scripts": {
     "build": "rollup -c"
- },
- "files": [
+  },
+  "files": [
     "dist",
     "theme"
- ],
-
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/whcgx/whcg-number-field.git"
@@ -21,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/whcgx/whcg-number-field/issues"
   },
-  "homepage": "https://github.com/whcgx/whcg-number-field#readme"
+  "homepage": "https://github.com/whcgx/whcg-number-field#readme",
+  "dependencies": {
+    "@polymer/polymer": "^3.0.5",
+    "@vaadin/vaadin-text-field": "^2.1.2"
+  }
 }
