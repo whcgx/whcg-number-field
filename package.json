@@ -1,6 +1,6 @@
 {
   "name": "@whcg/whcg-number-field",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "```html <whcg-number-field placeholder=\"...antal\" value=\"0.02\" suffix=\"%\" valueoutput=\"{{inflation}}\"></whcg-number-field> ```",
   "main": "dist/index.js",
   "module": "dist/index.es6.js",
