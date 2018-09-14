@@ -1,5 +1,5 @@
 import { html, PolymerElement } from '@polymer/polymer/polymer-element.js';
-import '@vaadin/vaadin-text-field/vaadin-text-field.js';
+import '@vaadin/vaadin-text-field/src/vaadin-text-field.js';
 import '../theme/whcg-number-field-styles.js';
 
 export class WhcgNumberField extends PolymerElement {
@@ -57,13 +57,10 @@ export class WhcgNumberField extends PolymerElement {
 
              }
             
-
-
         </style>
       
     <vaadin-text-field value="{{value}}" label="{{label}}" placeholder="{{placeholder}}" prevent-invalid-input pattern="[0-9]*" >
     </vaadin-text-field>
-
     `;
     }
 
