@@ -230,15 +230,15 @@ class WhcgNumberField extends polymerElement_js.PolymerElement {
     }
 
     _valueChanged() {
-        console.log('new value');
-        console.log(this.value);
+        // console.log('new value');
+        // console.log(this.value);
         this.valueoutput = this.value;
     }
 
     connectedCallback() {
         super.connectedCallback();
         let event = new CustomEvent('childrenattached', {bubbles: true, composed: true});
-        console.log('dispatchingEvent!!');
+        // console.log('dispatchingEvent!!');
         this.dispatchEvent(event);
 
     }
